@@ -24,14 +24,14 @@ class StoreFactory extends Factory
             'city' => ucfirst(fake()->word),
             'zipcode' => collect([75, 91, 92, 93, 94, 95])->random() . rand(10, 99) . '0',
             'country_code' => 'FR',
-            'hours' => json_encode([
+            'hours' => [
                 'Monday' => ['14:00-18:00'],
                 'Tuesday' => ['08:00-12:00', '14:00-18:00'],
                 'Wednesday' => ['08:00-12:00', '14:00-18:00'],
                 'Thursday' => ['08:00-12:00', '14:00-18:00'],
                 'Friday' => ['08:00-12:00', '14:00-18:00'],
                 'Saturday' => ['08:00-12:00'],
-            ]),
+            ],
         ];
     }
 }

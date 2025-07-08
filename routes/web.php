@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [StorelocController::class, 'index'])->name('index');
 Route::get('/resultats', [StorelocController::class, 'results'])->name('results');
+Route::get('/magasin/{id}', [StorelocController::class, 'show'])->name('store.show');
